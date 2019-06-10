@@ -14,6 +14,9 @@
 		0B62277A22AE935100AE6DE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B62277822AE935100AE6DE5 /* LaunchScreen.storyboard */; };
 		0BBD665422AE9DF900A75862 /* ViewController_touchDigit_method_definition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBD665322AE9DF900A75862 /* ViewController_touchDigit_method_definition.swift */; };
 		0BBD665622AEA14E00A75862 /* ViewController_touchDigit_display_update.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBD665522AEA14E00A75862 /* ViewController_touchDigit_display_update.swift */; };
+		0BBD665922AEAD0100A75862 /* ViewController_performOperation_method_addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBD665822AEAD0100A75862 /* ViewController_performOperation_method_addition.swift */; };
+		0BBD665B22AEB0F900A75862 /* ViewController_performOperation_sqrt_update.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBD665A22AEB0F900A75862 /* ViewController_performOperation_sqrt_update.swift */; };
+		0BBD665D22AEB21E00A75862 /* ViewController_performOperation_display_property_update.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBD665C22AEB21E00A75862 /* ViewController_performOperation_display_property_update.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		0B62277B22AE935100AE6DE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0BBD665322AE9DF900A75862 /* ViewController_touchDigit_method_definition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController_touchDigit_method_definition.swift; sourceTree = "<group>"; };
 		0BBD665522AEA14E00A75862 /* ViewController_touchDigit_display_update.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController_touchDigit_display_update.swift; sourceTree = "<group>"; };
+		0BBD665822AEAD0100A75862 /* ViewController_performOperation_method_addition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController_performOperation_method_addition.swift; sourceTree = "<group>"; };
+		0BBD665A22AEB0F900A75862 /* ViewController_performOperation_sqrt_update.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController_performOperation_sqrt_update.swift; sourceTree = "<group>"; };
+		0BBD665C22AEB21E00A75862 /* ViewController_performOperation_display_property_update.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController_performOperation_display_property_update.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +78,7 @@
 		0BBD665122AE9DC300A75862 /* Snippets */ = {
 			isa = PBXGroup;
 			children = (
+				0BBD665722AEACD800A75862 /* advanced-gui */,
 				0BBD665222AE9DCF00A75862 /* basic-gui */,
 			);
 			path = Snippets;
@@ -84,6 +91,16 @@
 				0BBD665522AEA14E00A75862 /* ViewController_touchDigit_display_update.swift */,
 			);
 			path = "basic-gui";
+			sourceTree = "<group>";
+		};
+		0BBD665722AEACD800A75862 /* advanced-gui */ = {
+			isa = PBXGroup;
+			children = (
+				0BBD665822AEAD0100A75862 /* ViewController_performOperation_method_addition.swift */,
+				0BBD665A22AEB0F900A75862 /* ViewController_performOperation_sqrt_update.swift */,
+				0BBD665C22AEB21E00A75862 /* ViewController_performOperation_display_property_update.swift */,
+			);
+			path = "advanced-gui";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,6 +176,9 @@
 			files = (
 				0B62277222AE935000AE6DE5 /* ViewController.swift in Sources */,
 				0BBD665422AE9DF900A75862 /* ViewController_touchDigit_method_definition.swift in Sources */,
+				0BBD665922AEAD0100A75862 /* ViewController_performOperation_method_addition.swift in Sources */,
+				0BBD665D22AEB21E00A75862 /* ViewController_performOperation_display_property_update.swift in Sources */,
+				0BBD665B22AEB0F900A75862 /* ViewController_performOperation_sqrt_update.swift in Sources */,
 				0BBD665622AEA14E00A75862 /* ViewController_touchDigit_display_update.swift in Sources */,
 				0B62277022AE935000AE6DE5 /* AppDelegate.swift in Sources */,
 			);
@@ -307,7 +327,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				EXCLUDED_SOURCE_FILE_NAMES = "\"Snippets/basic-gui/*\"";
+				EXCLUDED_SOURCE_FILE_NAMES = (
+					"\"Snippets/basic-gui/*\"",
+					"\"Snippets/advanced-gui/*\"",
+				);
 				INFOPLIST_FILE = Calculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -325,7 +348,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				EXCLUDED_SOURCE_FILE_NAMES = "\"Snippets/basic-gui/*\"";
+				EXCLUDED_SOURCE_FILE_NAMES = (
+					"\"Snippets/basic-gui/*\"",
+					"\"Snippets/advanced-gui/*\"",
+				);
 				INFOPLIST_FILE = Calculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

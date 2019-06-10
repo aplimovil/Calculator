@@ -23,6 +23,16 @@ class ViewController: UIViewController {
     // (to avoid 0 at left)
     var userIsInTheMiddleOfTyping = false
     
+    //Pre-computed property to simplify display text update operations
+    var displayValue:Double{
+        get{
+            return Double(display.text!)!
+        }
+        set{
+            display.text = String(newValue)
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -40,5 +50,18 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func performOperation(_ sender: UIButton) {
+        userIsInTheMiddleOfTyping = false
+        if let mathematicalSymbol = sender.currentTitle{
+            switch mathematicalSymbol{
+            case "π":
+                displayValue = Double.pi
+            case "√":
+                displayValue = sqrt(displayValue)
+            default:
+                break
+            }
+        }
+    }
 }
 
